@@ -1,0 +1,11 @@
+def find_missing_number_in_mobile(cellnumber):
+  myList = [int(d) for d in cellnumber]
+  return_digits = list()
+  for i in range(10):
+    if i not in myList:
+      return_digits.append(i)
+
+  return return_digits
+
+mobilenumber = '7019172165'
+print(find_missing_number_in_mobile(mobilenumber))
