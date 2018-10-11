@@ -1,0 +1,13 @@
+def test_sequence(mySequence):
+  myList = list(map(int, mySequence.split(',')))
+  for i in range(len(myList)):
+    count = 0
+    if myList.count(myList[i]) > 1:
+      test = "Numbers are not distinct"
+      break 
+    else:
+      test = "Number are distinct"
+  return test
+  
+seq = '1,2,3,15,19,5,4,6'
+print(test_sequence(seq))
